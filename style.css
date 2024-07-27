@@ -1,0 +1,319 @@
+body {
+    background-color: #EDF0F3;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-image: url(images-lyon-site/lyon_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 200px; /* Réduire la hauteur pour les écrans plus petits */
+    }
+
+    header h1 {
+        font-size: 2em; /* Réduire la taille de la police pour les écrans plus petits */
+    }
+}
+
+/* Media query pour les écrans de taille inférieure à 480px (mobiles) */
+@media (max-width: 480px) {
+    header {
+        height: 150px; /* Réduire encore la hauteur pour les très petits écrans */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Réduire encore la taille de la police pour les très petits écrans */
+    }
+}
+
+nav {
+    position: relative;
+    background-color: #333;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links a {
+        text-align: center;
+        padding: 14px;
+        border-top: 1px solid #575757;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon.active + .nav-links {
+        display: flex;
+    }
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFD700; /* Or (gold) pour le hover */
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    footer a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer .social-icons a {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer a {
+        font-size: 0.9em;
+    }
+
+    footer .social-icons a {
+        font-size: 1.2em;
+    }
+}
+
+
+
+h2, h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.color-word {
+    color: rgb(15, 135, 15);
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    font-size: 1em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+a:hover {
+    color: blueviolet;
+}
+
+
+
+/* Images avec bordure */
+
+.img-1 {
+    width: 100vw; /* Prendre toute la largeur de la vue */
+    margin-left: calc(50% - 50vw); /* Centrer le conteneur */
+}
+
+/* Styles pour l'image */
+.img-1 img {
+    width: 100%; /* Prendre toute la largeur du conteneur */
+    height: auto; /* Ajuster la hauteur automatiquement */
+    display: block; /* Enlever l'espace en ligne autour de l'image */
+}
+
+.section1, .section3, .section5, .section7, .section9 {
+    padding: 50px;
+    margin: 50px 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section2, .section4, .section6, .section8 {
+    padding: 50px;
+    margin: 50px 0;
+    background-color: #EDF0F3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mes ancres */
+
+.ancre-1 {
+    background-color: #f9f8f8;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;   
+}
+
+.ancre-1 h3 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    
+}
+
+
+.ancre-1 ul {
+    list-style: none; /* Enlever les puces */
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.ancre-1 ul li {
+    margin: 5px 0;
+}
+
+/* Styles pour les liens */
+.ancre-1 a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    display: block;
+}
+
+.ancre-1 a:hover {
+    color: #004999;
+    text-decoration: underline; /* Souligner au survol */
+}
+
+.top-page {
+    background-color: #cdcdcd;
+    margin: auto;
+    padding-bottom: 20px;  
+    padding-top: 20px;
+     
+}
+
+.top-page, h2 {
+    color: #000000;
+}
+
+.visit-lyon {
+    margin: auto;
+}
+
+.visit-lyon a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #0066cc;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.visit-lyon a:hover {
+    background-color: #d3d3d3;
+}
+
+/* Photos sections */
+.photo-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.photo-section img {
+    width: 100%;
+    max-width: 300px; /* Limite la largeur des images */
+    height: auto;
+    border-radius: 8px; /* Optionnel : ajoute un peu de style */
+}
+@media (max-width: 600px) {
+    .photo-section img {
+        max-width: 100%; /* Les images s'adaptent aux petits écrans */
+    }
+}
+
+.lyon-connect {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+
